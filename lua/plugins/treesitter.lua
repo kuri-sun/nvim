@@ -14,7 +14,7 @@ return {
         "markdown",
         "markdown_inline",
         "query",
-        "regex",
+        "svelte",
         "vim",
         "yaml",
       },
