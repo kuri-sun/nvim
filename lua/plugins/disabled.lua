@@ -1,7 +1,7 @@
 return {
   -- mini
   { "mini.ai", enabled = false },
-  { "mini.icons", enabled = false },
+  -- { "mini.icons", enabled = false },
   { "mini.pairs", enabled = false },
 
   -- file explorer
@@ -28,7 +28,6 @@ return {
       lazygit = { enabled = false },
       notifier = { enabled = false },
       notify = { enabled = false },
-      picker = { enabled = false },
       quickfile = { enabled = false },
       rename = { enabled = false },
       scope = { enabled = false },
@@ -71,4 +70,7 @@ return {
 
   -- tab pages
   { "bufferline.nvim", enabled = false },
+
+  -- git-signs
+  { "gitsigns.nvim", enabled = false },
 }
