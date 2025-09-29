@@ -75,5 +75,5 @@ return {
 	{ "gitsigns.nvim", enabled = false },
 
 	-- format tol
-	{ "conform.nvim", enabled = false },
+	-- { "conform.nvim", enabled = false },
 }

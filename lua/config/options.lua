@@ -10,4 +10,4 @@
 vim.opt.scrolloff = 8;
 
 -- disable autoformatting
-vim.g.autoformat = false
+-- vim.g.autoformat = false
