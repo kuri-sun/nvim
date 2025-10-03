@@ -1,68 +1,65 @@
 return {
-  {
-    "folke/snacks.nvim",
-    opts = {
-      picker = {},
-      explorer = {},
-    },
-    keys = {
-      -- Top Pickers & Explorer
-      {
-        "<leader><space>",
-        function()
-          Snacks.picker.smart()
-        end,
-        desc = "Smart Find Files",
-      },
-      {
-        "<leader>fr",
-        function()
-          Snacks.picker.recent()
-        end,
-        desc = "Recent",
-      },
-      -- Grep
-      {
-        "<leader>sg",
-        function()
-          Snacks.picker.grep()
-        end,
-        desc = "Grep",
-      },
-      -- LSP
-      {
-        "gd",
-        function()
-          Snacks.picker.lsp_definitions({
-            jump = { single = false }, -- auto-jump if only one result
-            ignore_current = false, -- skip current buffer/pos
-          })
-        end,
-        desc = "Goto Definition",
-      },
-      {
-        "gr",
-        function()
-          Snacks.picker.lsp_references()
-        end,
-        nowait = true,
-        desc = "References",
-      },
-      {
-        "gi",
-        function()
-          Snacks.picker.lsp_implementations()
-        end,
-        nowait = true,
-        desc = "Goto Implementation",
-      },
-      {
-        "gt",
-        function()
-          Snacks.picker.lsp_type_definitions()
-        end,
-        desc = "Goto T[y]pe Definition",
-      },
-    },
-  },
+	{
+		"folke/snacks.nvim",
+		opts = {
+			picker = {},
+			-- explorer = {},
+		},
+		keys = {
+			-- Top Pickers & Explorer
+			{
+				"<leader><space>",
+				function()
+					Snacks.picker.smart()
+				end,
+				desc = "Smart Find Files",
+			},
+			{
+				"<leader>fr",
+				function()
+					Snacks.picker.recent()
+				end,
+				desc = "Recent",
+			},
+			-- Grep
+			{
+				"<leader>sg",
+				function()
+					Snacks.picker.grep()
+				end,
+				desc = "Grep",
+			},
+			-- SP
+			{
+				"gd",
+				function()
+					Snacks.picker.lsp_definitions()
+				end,
+				desc = "Goto Definition",
+			},
+			{
+				"gr",
+				function()
+					Snacks.picker.lsp_references()
+				end,
+				nowait = true,
+				desc = "References",
+			},
+			{
+				"gi",
+				function()
+					Snacks.picker.lsp_implementations()
+				end,
+				nowait = true,
+				desc = "Goto Implementation",
+			},
+			{
+				"gt",
+				function()
+					Snacks.picker.lsp_type_definitions()
+				end,
+				desc = "Goto T[y]pe Definition",
+			},
+		},
+	},
 }
